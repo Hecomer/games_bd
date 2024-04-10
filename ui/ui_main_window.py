@@ -240,7 +240,7 @@ class Ui_MainWindow(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(-10, -100, 850, 850))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("images/ui_design.png"))
+        self.label.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/ui_design.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label.raise_()
