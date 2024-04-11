@@ -53,8 +53,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.main_label.setFont(font)
         self.main_label.setTabletTracking(False)
-        self.main_label.setStyleSheet("color:rgb(193, 187, 255);\n"
-"font: 48pt \"Century Gothic\";")
+        self.main_label.setStyleSheet("color:rgb(193, 187, 255);\n""font: 48pt \"Century Gothic\";")
         self.main_label.setObjectName("main_label")
         self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
         self.layoutWidget.setGeometry(QtCore.QRect(1, 360, 801, 44))
