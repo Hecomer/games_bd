@@ -661,7 +661,7 @@ selection-color: rgb(53, 53, 53);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="image3.qrc">:/newPrefix1/ui_design.png</pixmap>
+     <pixmap>:/newPrefix1/ui_design.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -674,6 +674,8 @@ selection-color: rgb(53, 53, 53);</string>
  </widget>
  <resources>
   <include location="image3.qrc"/>
+  <include location="../../../../OneDrive/Desktop/ui_bckgr.qrc"/>
+  <include location="ui_bckgr.qrc"/>
  </resources>
  <connections/>
 </ui>

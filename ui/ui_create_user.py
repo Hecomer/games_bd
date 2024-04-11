@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
+class Ui_CreateNewUser(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(400, 300)
@@ -19,7 +19,7 @@ class Ui_Form(object):
         self.bckgr_label.setGeometry(QtCore.QRect(0, -20, 441, 421))
         self.bckgr_label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")
         self.bckgr_label.setText("")
-        self.bckgr_label.setPixmap(QtGui.QPixmap(":/newPrefix/ui_design.png"))
+        self.bckgr_label.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/ui_design.png"))
         self.bckgr_label.setScaledContents(True)
         self.bckgr_label.setObjectName("bckgr_label")
         self.label_2 = QtWidgets.QLabel(Form)

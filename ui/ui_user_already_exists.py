@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Dialog(object):
+class Ui_CurrentUser(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(316, 80)
@@ -19,7 +19,7 @@ class Ui_Dialog(object):
         self.bckgr_label.setGeometry(QtCore.QRect(-50, -50, 371, 281))
         self.bckgr_label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")
         self.bckgr_label.setText("")
-        self.bckgr_label.setPixmap(QtGui.QPixmap(":/newPrefix/ui_design.png"))
+        self.bckgr_label.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/ui_design.png"))
         self.bckgr_label.setScaledContents(True)
         self.bckgr_label.setObjectName("bckgr_label")
         self.widget = QtWidgets.QWidget(Dialog)
