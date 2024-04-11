@@ -14,7 +14,7 @@ class User(Base):
     review = relationship("Review", back_populates="user")
 
     def __str__(self):
-        return f"Game {self.id} {self.title}"
+        return f"User {self.id} {self.nickname}"
 
     def __repr__(self):
         return str(self)
