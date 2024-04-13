@@ -50,5 +50,5 @@ class Purchase(QWidget, UiPurchase):
             else:
                 self.purchase_error_open()
 
-    def display_window(self):
+    def display_window_purchase(self):
         self.show()

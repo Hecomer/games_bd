@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
+class Ui_Game_info(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(800, 450)
@@ -26,7 +26,7 @@ class Ui_Form(object):
         self.bckgr_label.setGeometry(QtCore.QRect(-160, -10, 971, 651))
         self.bckgr_label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")
         self.bckgr_label.setText("")
-        self.bckgr_label.setPixmap(QtGui.QPixmap(":/newPrefix/ui_design.png"))
+        self.bckgr_label.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/ui_design.png"))
         self.bckgr_label.setScaledContents(True)
         self.bckgr_label.setObjectName("bckgr_label")
         self.tableWidget = QtWidgets.QTableWidget(Form)
@@ -215,7 +215,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Game_info()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())

@@ -6,6 +6,7 @@ from ui import UiStore
 from database import get_session, Game
 from .create_user_window import UserCreate
 from .purchase_window import Purchase
+from .game_info_window import Gameinfo
 
 
 class Store(QMainWindow, UiStore):
@@ -16,8 +17,10 @@ class Store(QMainWindow, UiStore):
         self.session = get_session()
         self.update_table()
         self.game_list.itemClicked.connect(self.list_cell_clicked)
-        self.buy_button.clicked.connect(self.passing_cell)
-        self.purchase_window = Purchase()
+        self.buy_button.clicked.connect(self.passing_cell_purchase)
+        self.info_button.clicked.connect(self.passing_cell_game_info)
+        self.purchase_window_pass = Purchase()
+        self.game_info_window_pass = Gameinfo()
 
     def open_user_create(self):
         self.create_window = UserCreate(self)
@@ -32,9 +35,13 @@ class Store(QMainWindow, UiStore):
         for game in games:
             self.game_list.addItem(QListWidgetItem(str(game.title)))
 
-    def passing_cell(self):
-        self.purchase_window.item.setText(self.currentItem.text())
-        self.purchase_window.display_window()
+    def passing_cell_purchase(self):
+        self.purchase_window_pass.item.setText(self.currentItem.text())
+        self.purchase_window_pass.display_window_purchase()
+
+    def passing_cell_game_info(self):
+        self.game_info_window_pass.item.setText(self.currentItem.text())
+        self.game_info_window_pass.display_window_info()
 
     def open_review(self):
         None
