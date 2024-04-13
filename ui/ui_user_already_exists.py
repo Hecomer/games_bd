@@ -15,6 +15,8 @@ class Ui_CurrentUser(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(316, 80)
+        Dialog.setMinimumSize(QtCore.QSize(316, 80))
+        Dialog.setMaximumSize(QtCore.QSize(316, 80))
         self.bckgr_label = QtWidgets.QLabel(Dialog)
         self.bckgr_label.setGeometry(QtCore.QRect(-50, -50, 371, 281))
         self.bckgr_label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")

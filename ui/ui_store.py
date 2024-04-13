@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
+class Ui_Store(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 530)
@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
         self.label.setGeometry(QtCore.QRect(-180, 0, 1001, 900))
         self.label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/newPrefix/ui_design.png"))
+        self.label.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/ui_design.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
@@ -40,7 +40,7 @@ class Ui_MainWindow(object):
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(680, 0, 100, 100))
         self.label_3.setText("")
-        self.label_3.setPixmap(QtGui.QPixmap(":/newPrefix/sbeam.png"))
+        self.label_3.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/sbeam.png"))
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.game_list = QtWidgets.QListWidget(self.centralwidget)
@@ -126,7 +126,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
+    ui = Ui_Store()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())

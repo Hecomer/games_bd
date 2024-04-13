@@ -15,6 +15,8 @@ class Ui_CreateNewUser(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(400, 300)
+        Form.setMinimumSize(QtCore.QSize(400, 300))
+        Form.setMaximumSize(QtCore.QSize(400, 300))
         self.bckgr_label = QtWidgets.QLabel(Form)
         self.bckgr_label.setGeometry(QtCore.QRect(0, -20, 441, 421))
         self.bckgr_label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")
