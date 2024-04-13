@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-200</x>
+     <y>-360</y>
+     <width>1001</width>
+     <height>900</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/newPrefix/ui_design.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ui_bckgr.qrc">:/newPrefix/ui_design.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="game_list">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>561</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Onest</family>
+     <pointsize>20</pointsize>
+     <weight>10</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.340591, y1:0.483, x2:0.755409, y2:0.932, stop:0 rgba(36, 36, 36, 255), stop:1 rgba(97, 97, 97, 255));
+selection-color: rgb(174, 160, 255);
+color: rgb(193, 187, 255);
+font: 87 20pt &quot;Onest&quot;;
+gridline-color: rgb(193, 187, 255);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>-10</y>
+     <width>631</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Century Gothic</family>
+     <pointsize>36</pointsize>
+     <weight>75</weight>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(193, 187, 255);</string>
+   </property>
+   <property name="text">
+    <string>Список игроков:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ui_bckgr.qrc"/>
+  <include location="../../AppData/Local/Programs/Python/Python310/Lib/site-packages/qt5_applications/Qt/bin/ui_bckgr.qrc"/>
+ </resources>
+ <connections/>
+</ui>
