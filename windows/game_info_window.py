@@ -10,7 +10,7 @@ class Gameinfo(QWidget, UiGame_info):
         self.create_window = None
         self.setupUi(self)
         self.session = get_session()
-        self.item = QListWidgetItem()
+        self.item = QTableWidgetItem()
 
 
     def display_window_info(self):

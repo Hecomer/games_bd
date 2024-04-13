@@ -7,6 +7,7 @@ from database import get_session, Game
 from .create_user_window import UserCreate
 from .purchase_window import Purchase
 from .game_info_window import Gameinfo
+from .user_list import UserList
 
 
 class Store(QMainWindow, UiStore):
@@ -19,8 +20,10 @@ class Store(QMainWindow, UiStore):
         self.game_list.itemClicked.connect(self.list_cell_clicked)
         self.buy_button.clicked.connect(self.passing_cell_purchase)
         self.info_button.clicked.connect(self.passing_cell_game_info)
+        self.users_button.clicked.connect(self.passing_cell_user_list)
         self.purchase_window_pass = Purchase()
         self.game_info_window_pass = Gameinfo()
+        self.user_list_pass = UserList()
 
     def open_user_create(self):
         self.create_window = UserCreate(self)
@@ -42,6 +45,10 @@ class Store(QMainWindow, UiStore):
     def passing_cell_game_info(self):
         self.game_info_window_pass.item.setText(self.currentItem.text())
         self.game_info_window_pass.display_window_info()
+
+    def passing_cell_user_list(self):
+        self.user_list_pass.item.setText(self.currentItem.text())
+        self.user_list_pass.display_window_user_list()
 
     def open_review(self):
         None

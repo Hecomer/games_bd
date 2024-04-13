@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
+class Ui_User_List(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(600, 530)
@@ -19,7 +19,7 @@ class Ui_Form(object):
         self.label.setGeometry(QtCore.QRect(-200, -360, 1001, 900))
         self.label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/newPrefix/ui_design.png"))
+        self.label.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/ui_design.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.game_list = QtWidgets.QListWidget(Form)
