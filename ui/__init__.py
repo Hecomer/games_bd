@@ -6,3 +6,4 @@ from .ui_purchase import Ui_Purchase as UiPurchase
 from .ui_purchase_error import Ui_Purchase_Error as UiPurchaseError
 from .ui_game_info import Ui_Game_info as UiGame_info
 from .ui_user_list import Ui_User_List as UiUser_List
+from .ui_review_window import Ui_Review as UiReview_Form
