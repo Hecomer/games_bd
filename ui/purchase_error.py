@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Dialog(object):
+class Ui_Purchase_Error(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(550, 200)
@@ -21,7 +21,7 @@ class Ui_Dialog(object):
         self.label.setGeometry(QtCore.QRect(-160, -280, 1000, 950))
         self.label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/newPrefix/ui_design.png"))
+        self.label.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/ui_design.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(Dialog)
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Dialog = QtWidgets.QDialog()
-    ui = Ui_Dialog()
+    ui = Ui_Purchase_Error()
     ui.setupUi(Dialog)
     Dialog.show()
     sys.exit(app.exec_())

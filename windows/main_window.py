@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QMainWindow, QTableWidgetItem
 from ui import UiMainWindow, UiCreateNewUser_Form
 from database import get_session
 from .create_user_window import UserCreate
-from .store import Store
+from .store_window import Store
 
 
 class MainWindow(QMainWindow, UiMainWindow):

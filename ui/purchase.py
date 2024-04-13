@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
+class Ui_Purchase(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(600, 300)
@@ -21,7 +21,7 @@ class Ui_Form(object):
         self.label.setGeometry(QtCore.QRect(-430, 0, 1031, 941))
         self.label.setStyleSheet("background-image: url(:/newPrefix/ui_design.png);")
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap(":/newPrefix/ui_design.png"))
+        self.label.setPixmap(QtGui.QPixmap("C:/Users/yanly/PycharmProjects/games_bd/images/ui_design.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.lineEdit = QtWidgets.QLineEdit(Form)
@@ -82,7 +82,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     Form = QtWidgets.QWidget()
-    ui = Ui_Form()
+    ui = Ui_Purchase()
     ui.setupUi(Form)
     Form.show()
     sys.exit(app.exec_())
