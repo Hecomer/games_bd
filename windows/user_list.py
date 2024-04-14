@@ -22,7 +22,6 @@ class UserList(QWidget, UiUser_List):
         self.update_table()
         self.show()
 
-
     def update_table(self):
         all_users = self.session.query(User).all()
         all_games = self.session.query(Game).all()

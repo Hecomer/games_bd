@@ -39,7 +39,7 @@ class Purchase(QWidget, UiPurchase):
             flag = 0
             for ugr in all_ugr:
                 if (ugr.game_id != game_ind+1) or (ugr.user_id != user_ind+1):
-                    pass
+                    flag = 0
                 else:
                     flag = 1
             if flag != 1:
@@ -49,6 +49,8 @@ class Purchase(QWidget, UiPurchase):
                 self.close()
             else:
                 self.purchase_error_open()
+        else:
+            self.purchase_error_open()
 
     def display_window_purchase(self):
         self.show()
